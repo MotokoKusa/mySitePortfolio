@@ -1,7 +1,7 @@
 <template>
-  <section class="mainPage">
+  <div class="mainPage">
     <SMain />
-  </section>
+  </div>
 </template>
 
 <script>

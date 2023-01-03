@@ -1,7 +1,7 @@
 <template>
-  <section class="contactPage">
+  <div class="contactPage">
     <SContact />
-  </section>
+  </div>
 </template>
 
 <script>

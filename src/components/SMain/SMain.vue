@@ -8,9 +8,10 @@
         <h1 class="main__title">
           {{ $t("main.text.title") }}
         </h1>
-        <p class="main__text text--color-2">
-          {{ $t("main.text.description") }}
-        </p>
+        <p
+          class="main__text text--color-2"
+          v-html="$t('main.text.description')"
+        ></p>
         <div class="main__links">
           <AButton
             button-view="link"

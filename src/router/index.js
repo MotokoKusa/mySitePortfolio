@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MainPage from "../views/MainPage.vue";
+import MainPage from "@/views/MainPage";
 import AboutPage from "@/views/AboutPage";
 import ContactPage from "@/views/ContactPage";
 import ResumePage from "@/views/ResumePage";
@@ -7,22 +7,22 @@ import ResumePage from "@/views/ResumePage";
 const routes = [
   {
     path: "/",
-    name: "MainPage",
+    name: "main",
     component: MainPage,
   },
   {
     path: "/about",
-    name: "AboutPage",
+    name: "about",
     component: AboutPage,
   },
   {
     path: "/resume",
-    name: "ResumePage",
+    name: "resume",
     component: ResumePage,
   },
   {
     path: "/contact",
-    name: "ContactPage",
+    name: "contact",
     component: ContactPage,
   },
 ];

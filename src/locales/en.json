@@ -14,13 +14,13 @@
         "name": "contact"
       }
     ],
-    "language": "EN"
+    "language": "RU"
   },
   "main": {
     "text": {
       "subtitle": "Hey, I’m",
       "title": "Belov Roman",
-      "description": "123"
+      "description": "I have been doing frontend development since 2019. I live and work in Moscow.<br> For several years of training and work in the field of web development, I managed to gain a multifaceted experience in more than 3 companies.<br><br> On this site you can find more information about me, my projects, as well as the technology stack that I work with."
     },
     "buttons": {
       "github": {
@@ -36,9 +36,12 @@
         "link": ""
       },
       "telegram": {
-        "name": "telegram",
+        "name": "Telegram",
         "link": ""
       }
     }
+  },
+  "footer": {
+    "text": "Contacts"
   }
 }

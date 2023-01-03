@@ -1,21 +1,24 @@
 <template>
   <div :class="['portfolio', { 'dark-themes': isLightThemes }]">
     <SHeader @handler-change-themes="changeThemes" />
-    <router-view />
-    <!--    <SFooter />-->
+    <transition name="component-fade" mode="out-in">
+      <router-view v-slot="{ Component }">
+        <transition name="route" mode="out-in">
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
+    </transition>
   </div>
 </template>
 
 <script>
 import "@/styles/main.scss";
 import SHeader from "@/components/SHeader/SHeader";
-// import SFooter from "@/components/SFooter/SFooter";
 import { ref } from "vue";
 
 export default {
   components: {
     SHeader,
-    // SFooter,
   },
 
   setup() {
@@ -31,3 +34,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(100vw);
+}
+.route-enter-active {
+  transition: all 0.5s ease-out;
+}
+.route-leave-active {
+  transition: all 0.5s ease-in;
+}
+</style>

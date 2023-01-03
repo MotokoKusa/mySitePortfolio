@@ -1,7 +1,7 @@
 <template>
-  <section class="resumePage">
+  <div class="resumePage">
     <SResume />
-  </section>
+  </div>
 </template>
 
 <script>
