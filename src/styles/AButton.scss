@@ -1,0 +1,41 @@
+.a-button {
+  display: flex;
+
+  &__action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 2.6rem;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    background: none;
+    text-decoration: none;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: .2rem solid transparent;
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      border-radius: 0.4rem;
+    }
+
+    &__image {
+      margin-right: 1rem;
+
+      path {
+        fill: var(--color-text-1);
+      }
+
+    }
+  }
+
+}
