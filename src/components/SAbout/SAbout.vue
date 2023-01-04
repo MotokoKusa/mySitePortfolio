@@ -10,12 +10,10 @@
           />
         </div>
         <div class="about__content">
-          <p class="about__content-txt text--color-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium in labore molestias officiis qui quod reprehenderit vel
-            vitae. Corporis debitis deleniti, dicta hic illum neque nobis qui
-            quod repellendus sed.
-          </p>
+          <p
+            class="about__content-txt text--color-1"
+            v-html="$t('about.description')"
+          ></p>
         </div>
       </div>
     </div>
