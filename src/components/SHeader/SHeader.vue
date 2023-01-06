@@ -85,7 +85,7 @@
 <script>
 import { debounce } from "lodash";
 import { isMobile } from "@/helpers/responsive.js";
-import { ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 export default {
   name: "SHeader",
   setup(props, ctx) {
@@ -95,9 +95,37 @@ export default {
       lang.locale = lang.locale === "ru" ? "en" : "ru";
     };
     const clickBurger = () => (isActiveBurger.value = !isActiveBurger.value);
+    const clickOutsideBurger = (event) => {
+      const menu = document.querySelector(".header__mobile__wrap");
+      const burger = document.querySelector(".header__burger");
+      if (
+        event.target !== menu &&
+        event.target !== burger &&
+        isActiveBurger.value
+      ) {
+        isActiveBurger.value = false;
+      }
+      window.removeEventListener("click", clickOutsideBurger);
+    };
     const changeThemes = () => {
       ctx.emit("handler-change-themes");
     };
+
+    onMounted(() => {
+      isMobileView.value = isMobile();
+      document.addEventListener("click", clickOutsideBurger);
+      window.addEventListener(
+        "resize",
+        debounce(() => (isMobileView.value = isMobile()), 100)
+      );
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener(
+        "resize",
+        debounce(() => (isMobileView.value = isMobile()), 100)
+      );
+    });
 
     return {
       isMobileView,
@@ -106,21 +134,6 @@ export default {
       changeThemes,
       clickBurger,
     };
-  },
-
-  mounted() {
-    this.isMobileView = isMobile();
-    window.addEventListener(
-      "resize",
-      debounce(() => (this.isMobileView = isMobile()), 100)
-    );
-  },
-
-  unmounted() {
-    window.removeEventListener(
-      "resize",
-      debounce(() => (this.isMobileView = isMobile()), 100)
-    );
   },
 };
 </script>
