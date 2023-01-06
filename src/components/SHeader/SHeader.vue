@@ -86,6 +86,7 @@
 import { debounce } from "lodash";
 import { isMobile } from "@/helpers/responsive.js";
 import { onMounted, onUnmounted, ref } from "vue";
+
 export default {
   name: "SHeader",
   setup(props, ctx) {
@@ -98,12 +99,14 @@ export default {
     const clickOutsideBurger = (event) => {
       const menu = document.querySelector(".header__mobile__wrap");
       const burger = document.querySelector(".header__burger");
-      if (
-        event.target !== menu &&
-        event.target !== burger &&
-        isActiveBurger.value
-      ) {
-        isActiveBurger.value = false;
+      if (burger && menu) {
+        if (
+          event.target !== menu &&
+          !burger.contains(event.target) &&
+          isActiveBurger.value
+        ) {
+          isActiveBurger.value = false;
+        }
       }
       window.removeEventListener("click", clickOutsideBurger);
     };
