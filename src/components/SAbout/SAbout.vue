@@ -9,10 +9,12 @@
             alt="Me"
           />
         </div>
-        <div class="about__content">
+        <div class="about__content text--color-1">
+          <h3>{{ $t("about.title") }}</h3>
           <p
-            class="about__content-txt text--color-1"
-            v-html="$t('about.description')"
+            v-for="(el, idx) in $tm('about.description')"
+            :key="idx"
+            v-html="$rt(el)"
           ></p>
         </div>
       </div>

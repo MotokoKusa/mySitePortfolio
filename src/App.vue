@@ -1,24 +1,31 @@
 <template>
   <div :class="['portfolio', { 'dark-themes': isLightThemes }]">
     <SHeader @handler-change-themes="changeThemes" />
-    <transition name="component-fade" mode="out-in">
-      <router-view v-slot="{ Component }">
-        <transition name="route" mode="out-in">
-          <component :is="Component"></component>
-        </transition>
-      </router-view>
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition
+        enter-active-class="animate__animated animate__fadeInLeft"
+        leave-active-class="animate__animated animate__fadeOutRight"
+        name="route"
+        duration="500"
+        mode="out-in"
+      >
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
+    <SFooter v-if="$route.name !== 'main'" />
   </div>
 </template>
 
 <script>
 import "@/styles/main.scss";
 import SHeader from "@/components/SHeader/SHeader";
+import SFooter from "@/components/SFooter/SFooter";
 import { ref } from "vue";
 
 export default {
   components: {
     SHeader,
+    SFooter,
   },
 
   setup() {
@@ -35,19 +42,12 @@ export default {
 };
 </script>
 
-<style scoped>
-.route-enter-from {
-  opacity: 0;
-  transform: translateX(-100vw);
+<style lang="scss" scoped>
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 0.5s;
 }
-.route-leave-to {
-  opacity: 0;
-  transform: translateX(100vw);
-}
-.route-enter-active {
-  transition: all 0.5s ease-out;
-}
-.route-leave-active {
-  transition: all 0.5s ease-in;
+
+.animate__animated.animate__fadeOutRight {
+  --animate-duration: 0.5s;
 }
 </style>

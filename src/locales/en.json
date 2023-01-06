@@ -6,12 +6,8 @@
         "name": "about"
       },
       {
-        "title": "Resume",
-        "name": "resume"
-      },
-      {
-        "title": "Contact",
-        "name": "contact"
+        "title": "Work experience",
+        "name": "experience"
       }
     ],
     "language": "RU"
@@ -40,6 +36,62 @@
         "link": ""
       }
     }
+  },
+  "about": {
+    "title": "I'll tell you a little about myself:",
+    "description": [
+      "I work as a Frontend developer. In my free time, I improve in web development.",
+      "In the field of Frontend development began to develop in 2019. I was engaged in self-study, and also took courses at different sites (Stepik, Skillbox, Youtube).",
+      "In 2021, he started working as an HTML coder. I was engaged in layout of landing pages according to layouts, made all sorts of edits to existing projects. In parallel, I studied JavaScript, Vue to move into the field of web development",
+      "In 2022, he was certified and moved to the position of Frontend developer",
+      "In the second half of 2022, I moved to work as a Frontend developer at KСK TECHNOLOGIES, where I currently work.",
+      "The stack I use:",
+      "Vue 2/3, Vue-router, Axios, Vuex, Nuxt, SCSS",
+      "The goal is to master in 2023:",
+      "Vue 3 composition api, Pinia, TypeScript, Nuxt 3"
+    ]
+  },
+  "resume": {
+    "title": "Work experience",
+    "experience": [
+      {
+        "name": "Frontend-developer",
+        "date": "september 2022 – present",
+        "company": {
+          "name": "KCK TECHNOLOGIES",
+          "link": "https://www.kck.ru/"
+        },
+        "duties": []
+      },
+      {
+        "name": "Frontend-developer",
+        "date": "may 2022 - july 2022",
+        "company": {
+          "name": "SYNERGY Corporation",
+          "link": "https://synergy.ru/"
+        },
+
+        "duties": [
+          "Creating components",
+          "Support for existing projects",
+          "Writing javascript scripts",
+          "Interaction with backend developers"
+        ]
+      },
+      {
+        "name": "HTML coder",
+        "date": "september 2021 - May 2022",
+        "company": {
+          "name": "SYNERGY Corporation",
+          "link": "https://synergy.ru/"
+        },
+        "duties": [
+          "Layout of landing pages by layouts",
+          "Support for existing projects",
+          "Writing simple javascript scripts"
+        ]
+      }
+    ]
   },
   "footer": {
     "text": "Contacts"

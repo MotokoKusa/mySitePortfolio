@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@intlify/vue-i18n-loader": "^4.2.0",
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
     "lodash": "^4.17.21",
     "pinia": "^2.0.28",

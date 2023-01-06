@@ -9,6 +9,10 @@ const routes = [
     path: "/",
     name: "main",
     component: MainPage,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
   },
   {
     path: "/about",
@@ -16,8 +20,8 @@ const routes = [
     component: AboutPage,
   },
   {
-    path: "/resume",
-    name: "resume",
+    path: "/experience",
+    name: "experience",
     component: ResumePage,
   },
   {
