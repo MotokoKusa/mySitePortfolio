@@ -2,7 +2,9 @@
   <section class="resume">
     <div class="container">
       <div class="resume__wrap">
-        <h3 class="resume__title text--color-1">{{ $t("resume.title") }}</h3>
+        <h3 class="resume__title text--color-1 title">
+          {{ $t("resume.title") }}
+        </h3>
         <ul class="resume__list">
           <li
             v-for="(el, key) in $tm('resume.experience')"

@@ -42,14 +42,66 @@
     "description": [
       "I work as a Frontend developer. In my free time, I improve in web development.",
       "In the field of Frontend development began to develop in 2019. I was engaged in self-study, and also took courses at different sites (Stepik, Skillbox, Youtube).",
-      "In 2021, he started working as an HTML coder. I was engaged in layout of landing pages according to layouts, made all sorts of edits to existing projects. In parallel, I studied JavaScript, Vue to move into the field of web development",
-      "In 2022, he was certified and moved to the position of Frontend developer",
-      "In the second half of 2022, I moved to work as a Frontend developer at KСK TECHNOLOGIES, where I currently work.",
-      "The stack I use:",
-      "Vue 2/3, Vue-router, Axios, Vuex, Nuxt, SCSS",
-      "The goal is to master in 2023:",
-      "Vue 3 composition api, Pinia, TypeScript, Nuxt 3"
-    ]
+      "In 2021, started working as an HTML coder. I was engaged in layout of landing pages according to layouts, made all sorts of edits to existing projects. In parallel, I studied JavaScript, Vue to move into the field of web development",
+      "In 2022, was certified and moved to the position of Frontend developer",
+      "In the second half of 2022, I moved to work as a Frontend developer at KСK TECHNOLOGIES, where I currently work."
+    ],
+    "stack": {
+      "present": {
+        "title": "The stack I use:",
+        "technologies" : [
+          {
+            "text": "Vue 2/3",
+            "src": "vue"
+          },
+          {
+            "text": "Vue-router",
+            "src": "vueRouter"
+          },
+          {
+            "text": "Axios",
+            "src": "axios"
+          },
+          {
+            "text": "Vuex",
+            "src": "vuex"
+          },
+          {
+            "text": "Nuxt",
+            "src": "nuxt"
+          },
+          {
+            "text": "SCSS",
+            "src": "scss"
+          }
+        ]
+      },
+      "future": {
+        "title": "The goal is to master in 2023:",
+        "technologies" : [
+          {
+            "text": "Vue 3",
+            "src": "vue"
+          },
+          {
+            "text": "Composition api",
+            "src": "vue"
+          },
+          {
+            "text": "Pinia",
+            "src": "pinia"
+          },
+          {
+            "text": "TypeScript",
+            "src": "ts"
+          },
+          {
+            "text": "Nuxt 3",
+            "src": "nuxt"
+          }
+        ]
+      }
+    }
   },
   "resume": {
     "title": "Work experience",

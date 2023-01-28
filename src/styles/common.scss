@@ -72,6 +72,20 @@ body {
   }
 }
 
+.title {
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+
 .a-button__action--color-1 {
   &:before {
     background: linear-gradient(

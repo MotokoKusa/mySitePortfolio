@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header__wrap">
         <router-link to="/" class="header__logo">
-          <img src="../../assets/images/logo.png" alt="logo" />
+          <img :src="logo" alt="logo" />
         </router-link>
         <ul v-if="!isMobileView" class="header__nav text--color-1">
           <li
@@ -86,6 +86,7 @@
 import { debounce } from "lodash";
 import { isMobile } from "@/helpers/responsive.js";
 import { onMounted, onUnmounted, ref } from "vue";
+import { logo } from "@/helpers/images.js";
 
 export default {
   name: "SHeader",
@@ -136,6 +137,7 @@ export default {
       changeLanguage,
       changeThemes,
       clickBurger,
+      logo,
     };
   },
 };
