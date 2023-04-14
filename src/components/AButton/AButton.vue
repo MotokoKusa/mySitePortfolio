@@ -8,6 +8,7 @@
     </button>
     <a
       v-if="buttonView === 'link'"
+      target="_blank"
       :class="[
         'a-button__action',
         `a-button__action--color-${gradientBg}`,

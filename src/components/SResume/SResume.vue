@@ -20,11 +20,15 @@
               </p>
             </div>
             <a
+              v-if="$rt(el.company.link)"
               :href="$rt(el.company.link)"
               class="resume__item-company text--color-5"
             >
               {{ $rt(el.company.name) }}
             </a>
+            <p v-else class="resume__item-company text--color-5">
+              {{ $rt(el.company.name) }}
+            </p>
             <p class="resume__subtitle text--color-1">
               {{ $t("resume.responsibilities.text") }}
             </p>
@@ -40,11 +44,15 @@
                 {{ $rt(elem) }}
               </li>
             </ul>
-            <p class="resume__subtitle text--color-1">
+            <p
+              v-if="$rt(el.achievements)"
+              class="resume__subtitle text--color-1"
+            >
               {{ $t("resume.achievements.text") }}
             </p>
             <p
               class="resume__achievements text--color-4"
+              v-if="$rt(el.achievements)"
               v-html="$rt(el.achievements)"
             ></p>
             <p class="resume__subtitle text--color-1">
