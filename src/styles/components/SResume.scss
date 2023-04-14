@@ -1,5 +1,6 @@
 .resume {
   padding: 6rem 0;
+
   @include _768 {
     padding: 8rem 0;
   }
@@ -13,6 +14,22 @@
     margin-bottom: 4rem;
   }
 
+  &__achievements {
+    font-size: 1.6rem;
+    line-height: 130%;
+    margin-bottom: 1.2rem;
+    a {
+      color: var(--color-text-1);
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    margin-bottom: 1rem;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -23,19 +40,23 @@
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
+
     &__head {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: 1.2rem;
+
       @include _768 {
         flex-direction: row;
       }
+
       &-title {
         font-weight: 300;
         font-size: 2.4rem;
         line-height: 2.9rem;
         margin-bottom: 1rem;
+
         @include _768 {
           margin-bottom: 0;
         }
@@ -58,18 +79,28 @@
     display: flex;
     flex-direction: column;
     list-style-type: disc;
+    margin-bottom: 1.2rem;
 
     &__item {
       font-weight: 300;
       font-size: 1.6rem;
       line-height: 2.4rem;
       margin-left: 2rem;
+
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
     }
   }
 
-
-
+  &__stack {
+    &__item {
+      display: inline-block;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
 }

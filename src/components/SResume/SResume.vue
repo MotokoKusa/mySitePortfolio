@@ -25,6 +25,9 @@
             >
               {{ $rt(el.company.name) }}
             </a>
+            <p class="resume__subtitle text--color-1">
+              {{ $t("resume.responsibilities.text") }}
+            </p>
             <ul
               v-if="$tm(`resume.experience[${key}].duties`)"
               class="resume__duties"
@@ -37,18 +40,31 @@
                 {{ $rt(elem) }}
               </li>
             </ul>
+            <p class="resume__subtitle text--color-1">
+              {{ $t("resume.achievements.text") }}
+            </p>
+            <p
+              class="resume__achievements text--color-4"
+              v-html="$rt(el.achievements)"
+            ></p>
+            <p class="resume__subtitle text--color-1">
+              {{ $t("resume.stack.text") }}
+            </p>
+            <ul
+              v-if="$tm(`resume.experience[${key}].stack`)"
+              class="resume__stack"
+            >
+              <li
+                v-for="(elem, idx) in $tm(`resume.experience[${key}].stack`)"
+                :key="idx"
+                class="resume__stack__item text--color-4"
+              >
+                {{ $rt(elem) }}
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: "SResume",
-  mounted() {
-    console.log();
-  },
-};
-</script>

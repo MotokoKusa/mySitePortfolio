@@ -44,7 +44,8 @@
       "In the field of Frontend development began to develop in 2019. I was engaged in self-study, and also took courses at different sites (Stepik, Skillbox, Youtube).",
       "In 2021, started working as an HTML coder. I was engaged in layout of landing pages according to layouts, made all sorts of edits to existing projects. In parallel, I studied JavaScript, Vue to move into the field of web development",
       "In 2022, was certified and moved to the position of Frontend developer",
-      "In the second half of 2022, I moved to work as a Frontend developer at KСK TECHNOLOGIES, where I currently work."
+      "In the second half of 2022, I moved to work as a Frontend developer at KСK TECHNOLOGIES",
+      "I have been looking for a job since April 2023"
     ],
     "stack": {
       "present": {
@@ -105,15 +106,49 @@
   },
   "resume": {
     "title": "Work experience",
+    "responsibilities": {
+      "text":"Main responsibilities:"
+    },
+    "achievements": {
+      "text":"Progress:"
+    },
+    "stack": {
+      "text":"The stack used:"
+    },
     "experience": [
       {
         "name": "Frontend-developer",
-        "date": "september 2022 – present",
+        "date": "september 2022 – April 2023",
         "company": {
           "name": "KCK TECHNOLOGIES",
           "link": "https://www.kck.ru/"
         },
-        "duties": []
+        "duties": [
+          "Development and creation of new sections (pages)",
+          "Development of new components",
+          "Support for existing projects",
+          "Writing business logic",
+          "Interaction with backend developers, analysts, testers",
+          "Interaction with the RESTful API",
+          "UIKit development and support",
+          "Cross-browser layout",
+          "Adaptive layout",
+          "Code refactoring",
+          "Code review"
+        ],
+        "achievements": "Together with a team of 15 people, we developed a large project for corporate clients, an analogue of Jira. Created a registry to receive information at the request of the client with the ability to upload to different formats such as word, pdf, xlsx, csv.",
+        "stack": [
+          "Vue 2",
+          "Vue-router",
+          "Vuex",
+          "Axios",
+          "Lodash",
+          "Storybook",
+          "Webpack",
+          "Moment.js",
+          "Swagger",
+          "Git"
+        ]
       },
       {
         "name": "Frontend-developer",
@@ -124,23 +159,60 @@
         },
 
         "duties": [
-          "Creating components",
+          "Development and creation of new sections (pages)",
+          "Development of new components",
           "Support for existing projects",
-          "Writing javascript scripts",
-          "Interaction with backend developers"
+          "Writing business logic scripts",
+          "Interaction with backend developers, analysts, testers",
+          "Interaction with the RESTful API",
+          "UIKit development and support",
+          "Cross-browser layout",
+          "Adaptive layout",
+          "Code refactoring",
+          "Code review"
+        ],
+        "achievements": "Together with the team moved <a href='https://synergy.ru '>https://synergy.ru </a> from Modx to Nuxt, Developed a new project <a href='https://synergyupgrade.ru '>https://synergyupgrade.ru </a> based on the project <a href='https://synergyhub.ru '>https://synergyhub.ru </a>",
+        "stack": [
+          "Vue 2/3",
+          "Nuxt 2",
+          "Vue-router",
+          "Vuex",
+          "Axios",
+          "Storybook",
+          "Pug",
+          "SCSS",
+          "Webpack",
+          "Git"
         ]
+
       },
       {
         "name": "HTML coder",
-        "date": "september 2021 - May 2022",
+        "date": "september 2021 - may 2022",
         "company": {
           "name": "SYNERGY Corporation",
           "link": "https://synergy.ru/"
         },
         "duties": [
+          "Cross-browser layout",
+          "Adaptive layout",
+          "Mobile first layout",
           "Layout of landing pages by layouts",
           "Support for existing projects",
-          "Writing simple javascript scripts"
+          "Interaction with project managers",
+          "Implementation of custom javascript widgets"
+        ],
+        "achievements": "He created more than 15 landing pages that successfully brought profit to the company, made changes to existing landing pages and engaged in refactoring and improving the code base, helped students with tasks and development as a developer.",
+        "stack": [
+          "HTML5",
+          "CSS3",
+          "PHP",
+          "SCSS",
+          "BEM",
+          "JavaScript",
+          "Nunjucks",
+          "Gulp",
+          "Git"
         ]
       }
     ]
